@@ -1,24 +1,60 @@
-# README
+## Rails 5 Web Starter ☀️
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Basic Rails setup w/ everything I generally use and need to start a web app.
 
-Things you may want to cover:
+* [Getting started](#getting-started)
+* [Stack](#stack)
+* [Required services](#required-services)
 
-* Ruby version
+### <a name="getting-started"></a> Getting started 🔧 
 
-* System dependencies
+```bash
+git clone git@github.com:herenow/rails-web-started.git
 
-* Configuration
+cd rails-web-starter
 
-* Database creation
+bundle install
 
-* Database initialization
+rails server
+```
 
-* How to run the test suite
+##### Optional (rename app name)
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+# Change:
+# ...
+# module RailsWebStarted
+# ...
+#
+# to whatever to want
 
-* Deployment instructions
+vim config/application.rb
+```
 
-* ...
+### <a name="stack"></a> Stack 🔥
+
+Major stack choices:
+
+#### Frontend
+
+TODO: Describe frontend stack
+
+#### Backend
+
+* [PostgreSQL](https://www.postgresql.org/) - Primary database, full-text search and geolocation
+
+#### Analytics
+
+TODO: Describe analytics stack
+
+### <a name="required-services"></a> Required services
+
+You will need to run the following services:
+
+#### All environments
+
+* [PostgreSQL](https://postgresapp.com/) - I recommend using [Postgres.app](https://postgresapp.com/) in Development on a mac.
+
+#### Production specific
+
+TODO: Describe
