@@ -13,10 +13,14 @@ git clone git@github.com:herenow/rails-web-started.git
 
 cd rails-web-starter
 
+cp .env.example .env
+
 bundle install
 
 rails server
 ```
+
+Open [.env.example](https://github.com/herenow/rails-web-starter/blob/master/.env.example) for a list of available environment variables to set.
 
 ##### Optional (rename app name)
 
@@ -42,6 +46,7 @@ TODO: Describe frontend stack
 #### Backend
 
 * [PostgreSQL](https://www.postgresql.org/) - Primary database, full-text search and geolocation
+* [Rollbar](https://rollbar.com/) - Error monitoring
 
 #### Analytics
 
