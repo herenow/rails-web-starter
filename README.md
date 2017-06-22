@@ -49,6 +49,7 @@ TODO: Describe frontend stack
 * [Rollbar](https://rollbar.com/) - Error monitoring
 * [Dotenv](https://github.com/bkeepers/dotenv) - To manage and document environment variables in development
 * [Virtus](https://github.com/solnic/virtus) - Defining data objects
+* [LetterOpener](https://github.com/ryanb/letter_opener) - View sent emails in the browser (in development)
 
 #### Analytics
 
