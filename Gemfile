@@ -10,6 +10,7 @@ gem 'rollbar'
 gem 'virtus'
 gem 'omniauth', '~> 1.0'
 gem 'omniauth-auth0', '~> 1.0'
+gem 'lograge'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

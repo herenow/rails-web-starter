@@ -14,4 +14,10 @@ class ApplicationController < ActionController::Base
       end
     end
   end
+
+  def append_info_to_payload(payload)
+    super
+
+    payload[:user_id] = current_user.id if current_user.present?
+  end
 end
