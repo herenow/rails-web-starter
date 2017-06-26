@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # Authentication
+  get '/auth/auth0/callback', to: 'auth0#callback'
+  get '/auth/logout', to: 'auth0#logout'
+  get '/auth/failure', to: 'auth0#failure'
+
+  root 'landing#index'
 end

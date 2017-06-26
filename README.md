@@ -6,7 +6,7 @@ Basic Rails setup w/ everything I generally use and need to start a web app.
 * [Stack](#stack)
 * [Required services](#required-services)
 
-### <a name="getting-started"></a> Getting started 🔧 
+### <a name="getting-started"></a> Getting started 🔧
 
 ```bash
 git clone git@github.com:herenow/rails-web-started.git
@@ -21,6 +21,14 @@ rails server
 ```
 
 Open [.env.example](https://github.com/herenow/rails-web-starter/blob/master/.env.example) for a list of available environment variables to set.
+
+#### Setting up user authentication
+
+Goto [https://auth0.com/](https://auth0.com/), create an account, setup a project and get your `AUTH0_CLIENT_ID` `AUTH0_CLIENT_SECRET` `AUTH0_DOMAIN` access keys.
+
+Update your `.env` file with those keys.
+
+You should have different keys/projects for development, staging and production.
 
 ##### Optional (rename app name)
 
@@ -46,6 +54,7 @@ TODO: Describe frontend stack
 #### Backend
 
 * [PostgreSQL](https://www.postgresql.org/) - Primary database, full-text search and geolocation
+* [Auth0](https://auth0.com/) - User authentication service
 * [Rollbar](https://rollbar.com/) - Error monitoring
 * [Dotenv](https://github.com/bkeepers/dotenv) - To manage and document environment variables in development
 * [Virtus](https://github.com/solnic/virtus) - Defining data objects

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth0_id: MyString
+  email: MyString
+  name: MyString
+
+two:
+  auth0_id: MyString
+  email: MyString
+  name: MyString
