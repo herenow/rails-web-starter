@@ -55,6 +55,8 @@ TODO: Describe frontend stack
 
 * [PostgreSQL](https://www.postgresql.org/) - Primary database, full-text search and geolocation
 * [Auth0](https://auth0.com/) - User authentication service
+* [RSpec](https://github.com/rspec/rspec-rails) - Testing framework of choice
+* [FactoryGirl](https://github.com/thoughtbot/factory_girl) - "Mocked" objects for tests, instead of fixtures
 * [Rollbar](https://rollbar.com/) - Error monitoring
 * [Dotenv](https://github.com/bkeepers/dotenv) - To manage and document environment variables in development
 * [Virtus](https://github.com/solnic/virtus) - Defining data objects

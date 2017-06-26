@@ -16,7 +16,7 @@ class UserAuthenticator
   end
 
   def call
-    user = User.find(auth0_uid: @auth0_uid)
+    user = User.find_by(auth0_uid: @auth0_uid)
 
     if user.present?
       result = Result.new(user: user)

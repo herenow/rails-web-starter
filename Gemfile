@@ -7,15 +7,15 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'rollbar'
-gem 'dotenv-rails'
 gem 'virtus'
 gem 'omniauth', '~> 1.0'
 gem 'omniauth-auth0', '~> 1.0'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
@@ -26,6 +26,13 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'letter_opener'
+end
+
+group :test do
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
+  gem 'shoulda-matchers'
+  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
