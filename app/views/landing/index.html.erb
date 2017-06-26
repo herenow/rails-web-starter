@@ -3,7 +3,7 @@
 
 <% if current_user.present? %>
 	<h2><%= current_user.name %></h2>
-	<%= link_to 'Sign out', auth_logout_path %>
+	<%= button_to 'Sign out', auth_logout_path, method: :post %>
 <% else %>
 	<button data-auth0-lock>Sign in</button>
 <% end %>
