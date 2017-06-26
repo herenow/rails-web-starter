@@ -1,5 +1,8 @@
 {
   "name": "rails-web-starter",
   "private": true,
+  "engines" : {
+    "node": "6.2.2"
+  },
   "dependencies": {}
 }
