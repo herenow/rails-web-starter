@@ -4,6 +4,9 @@
 
 Basic Rails setup w/ everything I generally use and need to start a web app.
 
+[Demo running in Heroku](https://rails-web-starter.herokuapp.com)
+
+### Content guide 📜
 * [Getting started](#getting-started)
 * [Stack](#stack)
 * [Required services](#required-services)
