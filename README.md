@@ -1,5 +1,7 @@
 ## Rails 5 Web Starter ☀️
 
+[![CircleCI](https://circleci.com/gh/herenow/rails-web-starter.svg?style=svg)](https://circleci.com/gh/herenow/rails-web-starter)
+
 Basic Rails setup w/ everything I generally use and need to start a web app.
 
 * [Getting started](#getting-started)
