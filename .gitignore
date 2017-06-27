@@ -21,3 +21,5 @@
 .DS_STORE
 
 .env
+
+public/assets
