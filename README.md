@@ -1,4 +1,4 @@
-## Rails 5 Web Starter ☀️
+# Rails 5 Web Starter ☀️
 
 [![CircleCI](https://circleci.com/gh/herenow/rails-web-starter.svg?style=svg)](https://circleci.com/gh/herenow/rails-web-starter)
 
@@ -6,12 +6,12 @@ Basic Rails setup w/ everything I generally use and need to start a web app.
 
 [Demo running in Heroku](https://rails-web-starter.herokuapp.com)
 
-### Content guide 📜
+## Content guide 📜
 * [Getting started](#getting-started)
 * [Stack](#stack)
 * [Required services](#required-services)
 
-### <a name="getting-started"></a> Getting started 🔧
+## <a name="getting-started"></a> Getting started 🔧
 
 ```bash
 git clone git@github.com:herenow/rails-web-started.git
@@ -27,7 +27,7 @@ rails server
 
 Open [.env.example](https://github.com/herenow/rails-web-starter/blob/master/.env.example) for a list of available environment variables to set.
 
-#### Setting up user authentication
+### Setting up user authentication
 
 Goto [https://auth0.com/](https://auth0.com/), create an account, setup a project and get your `AUTH0_CLIENT_ID` `AUTH0_CLIENT_SECRET` `AUTH0_DOMAIN` access keys.
 
@@ -35,7 +35,7 @@ Update your `.env` file with those keys.
 
 You should have different keys/projects for development, staging and production.
 
-##### Optional (rename app name)
+#### Optional (rename app name)
 
 ```bash
 # Change:
@@ -48,15 +48,15 @@ You should have different keys/projects for development, staging and production.
 vim config/application.rb
 ```
 
-### <a name="stack"></a> Stack 🔥
+## <a name="stack"></a> Stack 🔥
 
 Major stack choices:
 
-#### Frontend
+### Frontend
 
 TODO: Describe frontend stack
 
-#### Backend
+### Backend
 
 * [PostgreSQL](https://www.postgresql.org/) - Primary database, full-text search and geolocation
 * [Auth0](https://auth0.com/) - User authentication service
@@ -68,18 +68,18 @@ TODO: Describe frontend stack
 * [LetterOpener](https://github.com/ryanb/letter_opener) - View sent emails in the browser (in development)
 * [Lograge](https://github.com/roidrage/lograge) - Less noisy & more parsable production logs
 
-#### Analytics
+### Analytics
 
 TODO: Describe analytics stack
 
-### <a name="required-services"></a> Required services
+## <a name="required-services"></a> Required services
 
 You will need to run the following services:
 
-#### All environments
+### All environments
 
 * [PostgreSQL](https://postgresapp.com/) - I recommend using [Postgres.app](https://postgresapp.com/) in Development on a mac.
 
-#### Production specific
+### Production specific
 
 TODO: Describe
