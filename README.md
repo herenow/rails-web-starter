@@ -38,14 +38,22 @@ You should have different keys/projects for development, staging and production.
 #### Optional (rename app name)
 
 ```bash
+# Open config/application.rb
+#
 # Change:
 # ...
 # module RailsWebStarted
 # ...
 #
-# to whatever to want
+# Open config/database.yml
+#
+# Change all occurences of:
+# ...
+# rails-web-starter
+# ...
 
-vim config/application.rb
+sed -i '' s/RailsWebStarted/MyAwesomeApp/g config/application.rb
+sed -i '' s/rails-web-starter/my_awesome_app/g config/database.yml
 ```
 
 ## <a name="stack"></a> Stack 🔥
