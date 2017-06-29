@@ -75,6 +75,7 @@ TODO: Describe frontend stack
 * [Virtus](https://github.com/solnic/virtus) - Defining data objects
 * [LetterOpener](https://github.com/ryanb/letter_opener) - View sent emails in the browser (in development)
 * [Lograge](https://github.com/roidrage/lograge) - Less noisy & more parsable production logs
+* [Shog](https://github.com/phallguy/shog) - Colored logging
 
 ### Analytics
 
