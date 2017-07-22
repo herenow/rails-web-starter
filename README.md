@@ -18,6 +18,7 @@ git clone git@github.com:herenow/rails-web-started.git
 
 cd rails-web-starter
 
+cp config/database.yml.example config/database.yml
 cp .env.example .env
 
 bundle install
