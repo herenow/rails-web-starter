@@ -63,10 +63,6 @@ sed -i '' s/rails_web_starter/my_awesome_app/g config/environments/development.r
 
 Major stack choices:
 
-### Frontend
-
-TODO: Describe frontend stack
-
 ### Backend
 
 * [PostgreSQL](https://www.postgresql.org/) - Primary database, full-text search and geolocation
@@ -82,10 +78,6 @@ TODO: Describe frontend stack
 * [Shog](https://github.com/phallguy/shog) - Colored logging
 * [PumaWorkerKiller](https://github.com/schneems/puma_worker_killer) - Restart Rails when memory consumption threshold is exceeded
 
-### Analytics
-
-TODO: Describe analytics stack
-
 ## <a name="required-services"></a> Required services
 
 You will need to run the following services:
@@ -93,7 +85,3 @@ You will need to run the following services:
 ### All environments
 
 * [PostgreSQL](https://postgresapp.com/) - I recommend using [Postgres.app](https://postgresapp.com/) in Development on a mac.
-
-### Production specific
-
-TODO: Describe
