@@ -79,6 +79,7 @@ TODO: Describe frontend stack
 * [LetterOpener](https://github.com/ryanb/letter_opener) - View sent emails in the browser (in development)
 * [Lograge](https://github.com/roidrage/lograge) - Less noisy & more parsable production logs
 * [Shog](https://github.com/phallguy/shog) - Colored logging
+* [PumaWorkerKiller](https://github.com/schneems/puma_worker_killer) - Restart Rails when memory consumption threshold is exceeded
 
 ### Analytics
 

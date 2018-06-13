@@ -95,6 +95,7 @@ GEM
     faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.25)
+    get_process_mem (0.2.2)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hashie (3.5.7)
@@ -151,6 +152,9 @@ GEM
     pg (0.21.0)
     public_suffix (3.0.2)
     puma (3.11.4)
+    puma_worker_killer (0.1.0)
+      get_process_mem (~> 0.2)
+      puma (>= 2.7, < 4)
     rack (2.0.5)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
@@ -281,6 +285,7 @@ DEPENDENCIES
   omniauth-auth0 (~> 1.0)
   pg (~> 0.18)
   puma (~> 3.7)
+  puma_worker_killer
   rails (~> 5.2)
   rollbar
   rspec-rails

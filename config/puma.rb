@@ -16,5 +16,18 @@ on_worker_boot do
   end
 end
 
+before_fork do
+  PumaWorkerKiller.config do |config|
+    config.ram           = Integer(ENV['PUMA_WORKER_KILLER_RAM'] || 1024)
+    config.frequency     = Integer(ENV['PUMA_WORKER_KILLER_FREQUENCY'] || 10)    # seconds
+    config.percent_usage = 0.95
+    config.rolling_restart_frequency = Integer(ENV['PUMA_WORKER_KILLER_ROLLING'] || 24) * 3600 # 24 hours in seconds
+
+    config.pre_term = -> (worker) { puts "Worker #{worker.inspect} being killed" }
+  end
+
+  PumaWorkerKiller.start
+end
+
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
