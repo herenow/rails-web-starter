@@ -24,3 +24,5 @@
 
 public/assets
 config/database.yml
+dump.rdb
+appendonly.aof

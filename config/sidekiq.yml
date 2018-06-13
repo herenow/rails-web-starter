@@ -1,0 +1,6 @@
+---
+:concurrency: <%= ENV['SIDEKIQ_CONCURRENCY'].to_s.empty? ? 10 : ENV['SIDEKIQ_CONCURRENCY'] %>
+:timeout: <%= ENV['SIDEKIQ_KILL_TIMEOUT'].to_s.empty? ? 20 : ENV['SIDEKIQ_KILL_TIMEOUT'] %>
+:queues:
+  - [default, 30]
+  - [mailers, 20]

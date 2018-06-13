@@ -70,6 +70,7 @@ TODO: Describe frontend stack
 ### Backend
 
 * [PostgreSQL](https://www.postgresql.org/) - Primary database, full-text search and geolocation
+* [Sidekiq](https://github.com/mperham/sidekiq) - Job processing framework
 * [Auth0](https://auth0.com/) - User authentication service
 * [RSpec](https://github.com/rspec/rspec-rails) - Testing framework of choice
 * [FactoryGirl](https://github.com/thoughtbot/factory_girl) - "Mocked" objects for tests, instead of fixtures

@@ -11,6 +11,10 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 ActiveRecord::Migration.maintain_test_schema!
 
+# Sidekiq inline jobs
+require 'sidekiq/testing'
+Sidekiq::Testing.fake!
+
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
