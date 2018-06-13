@@ -55,6 +55,8 @@ You should have different keys/projects for development, staging and production.
 
 sed -i '' s/RailsWebStarted/MyAwesomeApp/g config/application.rb
 sed -i '' s/rails-web-starter/my_awesome_app/g config/database.yml
+sed -i '' s/rails_web_starter/my_awesome_app/g config/environments/production.rb
+sed -i '' s/rails_web_starter/my_awesome_app/g config/environments/development.rb
 ```
 
 ## <a name="stack"></a> Stack 🔥
